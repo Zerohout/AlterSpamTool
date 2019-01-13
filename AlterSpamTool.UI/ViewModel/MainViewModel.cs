@@ -12,9 +12,9 @@ namespace AlterSpamTool.UI.ViewModel
         /// <summary>
         /// Конструктор основной модели представления
         /// </summary>
-        public MainViewModel(INavigationViewModel navigationViewModel)
+        public MainViewModel(IEditPanelViewModel editPanelViewModel)
         {
-            NavigationViewModel = navigationViewModel;
+            EditPanelViewModel = editPanelViewModel;
         }
         
         /// <summary>
@@ -22,9 +22,9 @@ namespace AlterSpamTool.UI.ViewModel
         /// </summary>
         public async void LoadAsync()
         {
-            await NavigationViewModel.LoadAsync();
+            await EditPanelViewModel.LoadAsync();
         }
 
-        public INavigationViewModel NavigationViewModel { get; }
+        public IEditPanelViewModel EditPanelViewModel { get; }
     }
 }

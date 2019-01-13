@@ -28,7 +28,7 @@ namespace AlterSpamTool.UI.Startup
 
             builder.RegisterType<MainWindow>().AsSelf();
             builder.RegisterType<MainViewModel>().AsSelf();
-            builder.RegisterType<NavigationViewModel>().As<INavigationViewModel>();
+            builder.RegisterType<EditPanelViewModel>().AsImplementedInterfaces();
 
             builder.RegisterType<LookupDataService>().AsImplementedInterfaces();
             builder.RegisterType<SenderDataService>().As<ISenderDataService>();

@@ -27,7 +27,8 @@ namespace AlterSpamTool.UI.Data
                         new LookupItem
                         {
                             Id = s.Id,
-                            DisplayMember = s.Name
+                            DisplayMember = s.Name+ ":",
+                            DisplayExtra = s.Address
                         })
                     .ToListAsync();
             }

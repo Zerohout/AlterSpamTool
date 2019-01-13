@@ -80,9 +80,9 @@
     <Compile Include="Data\ISenderLookupDataService.cs" />
     <Compile Include="Data\LookupDataService.cs" />
     <Compile Include="Startup\Bootstrapper.cs" />
-    <Compile Include="ViewModel\INavigationViewModel.cs" />
+    <Compile Include="ViewModel\IEditPanelViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
-    <Compile Include="ViewModel\NavigationViewModel.cs" />
+    <Compile Include="ViewModel\EditPanelViewModel.cs" />
     <Compile Include="ViewModel\ViewModelBase.cs" />
     <Compile Include="View\NavigationView.xaml.cs">
       <DependentUpon>NavigationView.xaml</DependentUpon>

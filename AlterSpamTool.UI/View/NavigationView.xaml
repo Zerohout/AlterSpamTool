@@ -12,7 +12,7 @@
             VerticalAlignment="Center"
             FontWeight="Bold"
             FontSize="16"
-            Text=""/>
+            Text="{Binding TextBlockText}"/>
         <ComboBox
             x:Name="CBoxSenders"
             VerticalAlignment="Center"
@@ -20,20 +20,17 @@
             Margin="5 0 0 0"
             SelectedIndex="0"
             IsEnabled="True"
-            ItemsSource="{Binding Senders}"
-            DisplayMemberPath="DisplayMember">
-            
-            <!--<ComboBox.ItemTemplate>
+            ItemsSource="{Binding Senders}">
+            <ComboBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{Binding Name}"/>
-                        <TextBlock Text=":"/>
+                        <TextBlock Text="{Binding DisplayMember}"/>
                         <TextBlock 
-                            Text="{Binding Address}"
+                            Text="{Binding DisplayExtra}"
                             Opacity="0.5"/>
                     </StackPanel>
                 </DataTemplate>
-            </ComboBox.ItemTemplate>-->
+            </ComboBox.ItemTemplate>
         </ComboBox>
         <Button
             x:Name="BtnAddSender"

@@ -6,6 +6,6 @@
 
         public string DisplayMember { get; set; }
 
-        
+        public string DisplayExtra { get; set; }
     }
 }

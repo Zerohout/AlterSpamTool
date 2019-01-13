@@ -5,11 +5,17 @@ using System.Threading.Tasks;
 
 namespace AlterSpamTool.UI.ViewModel
 {
-    public class NavigationViewModel : INavigationViewModel
+    public class EditPanelViewModel : IEditPanelViewModel
     {
         private ISenderLookupDataService _senderDataService;
 
-        public NavigationViewModel(ISenderLookupDataService senderDataService)
+        private string textBlockText;
+
+        public string TextBlockText => textBlockText = "Отправители:";
+            
+
+
+        public EditPanelViewModel(ISenderLookupDataService senderDataService)
         {
             _senderDataService = senderDataService;
             Senders = new ObservableCollection<LookupItem>();

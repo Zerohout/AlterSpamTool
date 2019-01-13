@@ -2,7 +2,7 @@
 
 namespace AlterSpamTool.UI.ViewModel
 {
-    public interface INavigationViewModel
+    public interface IEditPanelViewModel
     {
         Task LoadAsync();
     }
